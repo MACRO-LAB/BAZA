@@ -1,2 +1,0 @@
-Start = "Hello"
-print(Start)
