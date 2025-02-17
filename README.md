@@ -1,13 +1,12 @@
 <div style="text-align: center">
     <h1>База знаний</h1>
-<img src="https://github.com/devicons/devicon/blob/master/icons/git/git-original-wordmark.svg" title="Git" **alt="Git" width="40" height="40"/>
-<img src="https://github.com/devicons/devicon/blob/master/icons/php/php-original.svg" title="Git" **alt="Git" width="40" height="40"/>
-<img src="https://github.com/devicons/devicon/blob/master/icons/jetbrains/jetbrains-original.svg" title="Git" **alt="Git" width="40" height="40"/>
-<img src="https://github.com/devicons/devicon/blob/master/icons/javascript/javascript-original.svg" title="Git" **alt="Git" width="40" height="40"/>
-<img src="https://github.com/devicons/devicon/blob/master/icons/python/python-original.svg" title="Git" **alt="Git" width="40" height="40"/>
-<img src="https://www.awg.ru/upload/iblock/eb4/bitrix.png" title="Git" **alt="Git" width="40" height="40"/>
-<span> </span>
-s234
+<img src="https://github.com/devicons/devicon/blob/master/icons/git/git-original-wordmark.svg" title="Git" alt="Git" width="40" height="40"/>
+<img src="https://github.com/devicons/devicon/blob/master/icons/php/php-original.svg" title="PHP" alt="PHP" width="40" height="40"/>
+<img src="https://github.com/devicons/devicon/blob/master/icons/jetbrains/jetbrains-original.svg" title="JetBrains" alt="JetBrains" width="40" height="40"/>
+<img src="https://github.com/devicons/devicon/blob/master/icons/javascript/javascript-original.svg" title="JavaScript" alt="JavaScript" width="40" height="40"/>
+<img src="https://github.com/devicons/devicon/blob/master/icons/python/python-original.svg" title="Python" alt="Python" width="40" height="40"/>
+<img src="https://avatars.mds.yandex.net/get-ydo/3927445/2a00000180965a6ead7b716980d0ab81c2bb/diploma" title="Bitrix" alt="Bitrix" width="40" height="40"/>
+
 
 ----
 <h2>Навигация:</h2>
