@@ -25,7 +25,7 @@
 
 ## Other
 <details>
-  <summary>logger`</summary>
+  <summary>logger</summary>
 
 [logger](logger/logger.php)
 </details>
