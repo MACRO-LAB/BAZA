@@ -7,6 +7,7 @@
 <details>
 <summary>Обработчик события `OnAfterIBlockElementUpdate`</summary>
 
+[OnAfterIBlockElementUpdate](event/OnAfterIBlockElementUpdate.php)
 Этот PHP-скрипт предназначен для обработки события `OnAfterIBlockElementUpdate` в системе управления контентом (CMS)
 Bitrix. Событие срабатывает после обновления элемента инфоблока. Основная задача скрипта — извлечь изображения,
 закодированные в формате Base64, из поля `DETAIL_TEXT`, сохранить их на сервере и заменить ссылки на эти изображения в
