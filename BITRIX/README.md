@@ -23,13 +23,9 @@
 </details>
 
 
-<details>
-  <summary>Обработчик события `NEXT`</summary>
-</details>
-
 ## Other
 <details>
-  <summary>Обработчик события `NEXT`</summary>
+  <summary>logger`</summary>
 
 [logger](logger/logger.php)
 </details>
