@@ -101,12 +101,12 @@
   <summary>Если мы хотим использовать классы Битрикса, но не хотим выводить визуальную часть </summary>
     вместо подключения  вначале и  вконце
 
-```
+```php
    require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
    require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");
 ```
 можно просто подключить
-```
+```php
    \Bitrix\Main\Loader; Loader::includeModule('iblock');
    require($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/main/include/prolog_after.php");
    require($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/main/include/prolog_before.php"); 
@@ -117,7 +117,7 @@
 <details>
   <summary>пример добавления имени раздела в catalog.item  с cache</summary>
 
-```
+```php
    ["IBLOCK_ID" => $sectionId];
        $arSelect = ['ID', 'NAME'];
        $sectionRes = \Bitrix\Iblock\SectionTable::getList([
@@ -133,7 +133,7 @@
 <details>
   <summary>пример с SectionTable</summary>
 
-```
+```php
 	 $sectionRes = \Bitrix\Iblock\SectionTable::getList([
 		'select' => ['ID', 'NAME'],
 	])->fetchAll();
@@ -155,7 +155,7 @@
 <details>
   <summary>получить данные о шаблоне</summary>
 
-```
+```php
  	bitrix/modules/main/classes/general/component_template.php
   	pr($this->__file);  745 row
 
@@ -166,7 +166,7 @@
 <details>
   <summary>PHP строка в админке пример проверки 1с url	</summary>
 
-```
+```php
    <?php
    $http = new Main\Web\HttpClient();
    $http->disableSslVerification();
