@@ -15,7 +15,7 @@
 </div>
 
 ## Содержание 📖
-[BITRIX](BITRIX/README.md) • [CSS](CSS/README.md) • [GIT](GIT/README.md) • [HTML](HTML/README.md) • [JETBRAINS](JETBRAINS/README.md) • [JS](JS/README.md) • [MARKDOWN](MARKDOWN/README.md) • [PHP](PHP/README.md) • [PYTHON](PYTHON/README.md)
+[BITRIX](BITRIX/README.md) • [CSS](CSS/README.md) • [GIT](GIT/README.md) • [HTML](HTML/README.md) • [JETBRAINS](JETBRAINS/README.md) • [JS](JS/README.md) • [MARKDOWN](MARKDOWN/README.md) • [PHP](PHP/README.md) • [PYTHON](PYTHON/README.md)• [CONSOLE](CONSOLE/README.md)
 
 ## Статистика проекта 📊
 [![Статистика GitHub](https://github-readme-stats.vercel.app/api?username=MACRO-LAB&show_icons=true&theme=radical)](https://github.com/ваше_имя_пользователя)
