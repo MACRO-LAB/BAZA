@@ -5,7 +5,7 @@
 <details>
     <summary>OOP</summary>
 
-*   [OOP](PYTHON/oop/README.md)
+*   [OOP](oop/README.md)
 
 </details>
 
