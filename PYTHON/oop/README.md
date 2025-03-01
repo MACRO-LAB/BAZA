@@ -324,3 +324,51 @@ print(f3)  # Вывод: 10/8
 8. Новый знаменатель: 2 * 4 = 8.
 9. Возвращается новый объект Fraction(10, 8).
 </details>
+
+
+<details>
+    <summary>2.6 Итераторы</summary>
+Итератор — это объект, который позволяет перебирать элементы коллекции (например, списка, словаря или пользовательского объекта) по одному. 
+
+В Python итераторы реализуются с помощью методов `__iter__` и `__next__`.
+```python
+my_list = [1, 2, 3]
+my_iter = iter(my_list)  # Получаем итератор
+
+print(next(my_iter))  # Вывод: 1
+print(next(my_iter))  # Вывод: 2
+print(next(my_iter))  # Вывод: 3
+```
+Чтобы создать собственный итератор, нужно:
+1.  Реализовать метод `__iter__`, который возвращает сам объект.
+2. Реализовать метод `__next__`, который возвращает следующий элемент или вызывает исключение `StopIteration`, если элементы закончились.
+
+Пример итератора для класса:
+```python
+class Range:
+    def __init__(self, start, end, step=1):
+        if self.step < 0:
+            raise ValueError("Шаг должен быть положительным числом")
+        self.start = start
+        self.end = end
+        self.step = step
+
+    def __iter__(self):
+        self.current = self.end
+        return self
+
+    def __next__(self):
+        if self.current >= self.start:
+            result = self.current  # Сохраняем текущее значение
+            self.current -= self.step  # Увеличиваем текущее значение на шаг
+            return result  # Возвращаем сохраненное значение
+        else:
+            raise StopIteration
+
+my_range = Range(1, 10, 2)
+
+# Используем итератор
+for num in my_range:
+    print(num)
+```
+</details>
