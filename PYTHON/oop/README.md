@@ -497,3 +497,84 @@ result = f"Order ID: {order_1.order_id}, Product: {order_1.product}, Customer: {
 print(result)
 ```
 </details>
+
+
+<details>
+    <summary>3.4 Свойства (Properties)</summary>
+Свойства — это способ контролировать доступ к атрибутам объекта. Они позволяют:
+
+* Читать значение атрибута.
+* Устанавливать значение атрибута.
+* Удалять атрибут.
+Свойства создаются с помощью декораторов `@property`, `@<attribute>.setter` и `@<attribute>.deleter`.
+```python
+class Temperature:
+    def __init__(self, celsius):
+        self._celsius = celsius  # Защищенный атрибут
+
+    @property
+    def celsius(self):
+        return self._celsius  # Возвращаем значение
+
+    @celsius.setter
+    def celsius(self, new_set):
+        if new_set > -273.15:
+            self._celsius = new_set  # Устанавливаем новое значение
+        else:
+            raise ValueError("Температура не может быть меньше -273.15")
+
+    @celsius.deleter
+    def celsius(self):
+        del self._celsius  # Удаляем атрибут
+
+    @property
+    def fahrenheit(self):
+        return self._celsius * 9/5 + 32  # Возвращаем температуру в Фаренгейтах
+
+# Создаем объект
+temp = Temperature(25)
+
+# Используем свойства
+print(temp.fahrenheit)  # Вывод: 77.0
+
+# Устанавливаем новое значение
+temp.celsius = 30
+print(temp.fahrenheit)  # Вывод: 86.0
+
+del temp.celsius  # Удаляем атрибут
+
+
+```
+</details>
+
+
+<details>
+    <summary>Когда использовать _celsius, а когда __celsius?</summary>
+`celsius` - название просто для примера
+
+1. `_celsius`:
+
+    * Используй, если хочешь показать, что атрибут не предназначен для публичного доступа, но при этом не хочешь усложнять его использование внутри класса или в подклассах.
+    * Это более "мягкий" способ инкапсуляции.
+
+2. `__celsius`:
+
+   * Используй, если хочешь сделать атрибут действительно "приватным" и предотвратить его случайное использование извне.
+   * Это более "строгий" способ инкапсуляции.
+
+```python
+class Temperature:
+    def __init__(self, celsius):
+        self._celsius = celsius  # Защищенный атрибут
+        self.__celsius = celsius  # Приватный атрибут
+
+temp = Temperature(25)
+
+# Доступ к защищенному атрибуту
+print(temp._celsius)  # Вывод: 25 (но так делать не рекомендуется)
+
+# Доступ к приватному атрибуту
+print(temp.__celsius)  # Ошибка: AttributeError
+print(temp._Temperature__celsius)  # Вывод: 25 (но так делать не следует)
+```
+</details>
