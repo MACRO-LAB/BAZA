@@ -470,3 +470,30 @@ print(result)  # Вывод: 8
 * Логическая группировка: Если функция связана с классом, но не использует его атрибуты, её можно сделать статическим методом.
 * Удобство: Статические методы можно вызывать без создания объекта класса
 </details>
+
+
+
+<details>
+    <summary>3.3 Сущности и отношения</summary>
+В объектно-ориентированном программировании (ООП):
+
+* Сущность — это объект, который представляет что-то значимое в программе (например, человек, машина, заказ).
+* Отношение — это связь между сущностями (например, человек владеет машиной, заказ принадлежит клиенту).
+```python
+class Customer:
+    def __init__(self, name, email):
+        self.name = name
+        self.email = email
+
+class Order :
+    def __init__(self,order_id, product, customer):
+        self.order_id = order_id
+        self.product = product
+        self.customer = customer
+
+customer_1 = Customer("John Doe", "oBx2z@example.com")
+order_1 = Order(1, "Laptop", customer_1)
+result = f"Order ID: {order_1.order_id}, Product: {order_1.product}, Customer: {order_1.customer.name}"
+print(result)
+```
+</details>
