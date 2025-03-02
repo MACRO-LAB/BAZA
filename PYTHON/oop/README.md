@@ -578,3 +578,50 @@ print(temp.__celsius)  # Ошибка: AttributeError
 print(temp._Temperature__celsius)  # Вывод: 25 (но так делать не следует)
 ```
 </details>
+
+
+<details>
+    <summary>4. SOLID → 4.1 Принципы</summary>
+SOLID — это набор из пяти принципов объектно-ориентированного программирования, которые помогают писать более понятный, 
+гибкий и поддерживаемый код. Эти принципы были предложены Робертом Мартином (дядя Боб).
+
+1. S — Single Responsibility Principle (Принцип единственной ответственности):
+   * Класс должен иметь только одну причину для изменения (т.е. выполнять только одну задачу).
+```python
+class Task:
+    def __init__(self, description):
+        self.description = description
+
+    def display(self):
+        return f"Задача: {self.description}"
+
+class TaskSaver:
+    @staticmethod
+    def save_to_file(task, filename):
+        with open(filename, 'w') as file:
+            file.write(task)
+
+class TaskNotifier:
+    @staticmethod
+    def notify(task):
+        print(f"Уведомление: {task}")
+
+# Создаем объекты
+task = Task("Закончить проект")
+task_content = task.display()
+
+# Сохраняем задачу в файл
+TaskSaver.save_to_file(task_content, "task.txt")
+
+# Отправляем уведомление
+TaskNotifier.notify(task_content)
+```
+2. O — Open/Closed Principle (Принцип открытости/закрытости):
+   * Классы должны быть открыты для расширения, но закрыты для модификации.
+3. L — Liskov Substitution Principle (Принцип подстановки Барбары Лисков):
+   * Объекты в программе должны быть заменяемы экземплярами их подтипов без изменения правильности программы.
+4. I — Interface Segregation Principle (Принцип разделения интерфейса):
+   * Клиенты не должны зависеть от интерфейсов, которые они не используют.
+5. D — Dependency Inversion Principle (Принцип инверсии зависимостей):
+   * Модули верхнего уровня не должны зависеть от модулей нижнего уровня. Оба должны зависеть от абстракций.
+</details>
