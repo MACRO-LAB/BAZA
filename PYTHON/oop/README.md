@@ -583,6 +583,7 @@ print(temp._Temperature__celsius)  # Вывод: 25 (но так делать н
 
 <details>
     <summary>4. SOLID → 4.1 Принципы</summary>
+
 SOLID — это набор из пяти принципов объектно-ориентированного программирования, которые помогают писать более понятный, 
 гибкий и поддерживаемый код. Эти принципы были предложены Робертом Мартином (дядя Боб).
 
@@ -651,7 +652,39 @@ class PDFReport(Report):
 # Например, можно добавить проверку на пустой отчет:
 ```
 3. L — Liskov Substitution Principle (Принцип подстановки Барбары Лисков):
-   * Объекты в программе должны быть заменяемы экземплярами их подтипов без изменения правильности программы.
+   * Объекты в программе должны быть заменяемы экземплярами их подтипов без изменения правильности программы.Если у тебя есть базовый класс и подкласс, то объект подкласса должен быть able to replace объект базового класса без изменения поведения программы.
+```python
+class Shape:
+    def area(self):
+        raise NotImplementedError("Метод area должен быть переопределен в подклассе")
+
+class Rectangle(Shape):
+    def __init__(self, width, height):
+        self.width = width
+        self.height = height
+
+    def area(self):
+        return self.width * self.height
+
+class Circle(Shape):
+    def __init__(self, radius):
+        self.radius = radius
+
+    def area(self):
+        return 3.14 * self.radius ** 2
+
+# Функция, которая работает с фигурами
+def print_area(shape):
+    print(f"Площадь: {shape.area()}")
+
+# Создаем объекты
+rectangle = Rectangle(5, 10)
+circle = Circle(7)
+
+# Проверяем
+print_area(rectangle)  # Вывод: Площадь: 50
+print_area(circle)     # Вывод: Площадь: 153.86
+```
 4. I — Interface Segregation Principle (Принцип разделения интерфейса):
    * Клиенты не должны зависеть от интерфейсов, которые они не используют.
 5. D — Dependency Inversion Principle (Принцип инверсии зависимостей):
