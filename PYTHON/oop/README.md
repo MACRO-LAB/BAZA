@@ -687,6 +687,40 @@ print_area(circle)     # Вывод: Площадь: 153.86
 ```
 4. I — Interface Segregation Principle (Принцип разделения интерфейса):
    * Клиенты не должны зависеть от интерфейсов, которые они не используют.
+     * Другими словами:
+     * Не нужно создавать "толстые" интерфейсы, которые содержат много методов. Вместо этого лучше разделить их на более мелкие и специализированные.
+```python
+class Printer:
+    def print(self, document):
+        print(f"Печать документа: {document}")
+
+class Scanner:
+    def scan(self):
+        return "Сканирование документа"
+
+class Copier:
+    def copy(self):
+        return "Копирование документа"
+
+class MultiFunctionDevice(Printer, Scanner, Copier):
+    pass
+
+# Создаем объекты
+printer = Printer()
+scanner = Scanner()
+copier = Copier()
+mfd = MultiFunctionDevice()
+
+# Используем методы
+printer.print("Документ 1")  # Вывод: Печать документа: Документ 1
+print(scanner.scan())        # Вывод: Сканирование документа
+print(copier.copy())         # Вывод: Копирование документа
+
+# Многофункциональное устройство
+mfd.print("Документ 2")      # Вывод: Печать документа: Документ 2
+print(mfd.scan())            # Вывод: Сканирование документа
+print(mfd.copy())            # Вывод: Копирование документа
+```
 5. D — Dependency Inversion Principle (Принцип инверсии зависимостей):
    * Модули верхнего уровня не должны зависеть от модулей нижнего уровня. Оба должны зависеть от абстракций.
 </details>
