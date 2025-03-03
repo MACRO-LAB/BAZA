@@ -723,4 +723,59 @@ print(mfd.copy())            # Вывод: Копирование докумен
 ```
 5. D — Dependency Inversion Principle (Принцип инверсии зависимостей):
    * Модули верхнего уровня не должны зависеть от модулей нижнего уровня. Оба должны зависеть от абстракций.
+```python
+from abc import ABC, abstractmethod
+
+
+class Notification(ABC):
+    @abstractmethod
+    def send_notification(self, message):
+        pass
+
+
+class EmailSender(Notification):
+    def send_notification(self, message):
+        # Логика отправки уведомления по электронной почте
+        pass
+
+
+class SMSNotification(Notification):
+    def send_notification(self, message):
+        # Логика отправки уведомления по SMS
+        pass
+
+
+class User:
+    def __init__(self, username, email):
+        self.username = username
+        self.email = email
+        self.notification_service = EmailSender()
+
+    def send_notification(self, message):
+        self.notification_service.send_notification(message)
+```
+
+* В этом примере класс User зависит от конкретной реализации EmailSender в качестве сервиса уведомлений. Это создает
+  прямую связь между User и EmailSender, что делает классы сложнее для тестирования и внесения изменений. Чтобы
+  применить SOLID принцип DIP, мы изменяем User, чтобы он зависел от абстракции Notification, а не от конкретной
+  реализации:
+```python
+class User:
+    def __init__(self, username, email, notification_service):
+        self.username = username
+        self.email = email
+        self.notification_service = notification_service
+
+    def send_notification(self, message):
+        self.notification_service.send_notification(message)
+
+email_sender = EmailSender()
+user = User("John", "john@example.com", email_sender)
+user.send_notification("Hello!")
+
+sms_notification = SMSNotification()
+user = User("Jane", "jane@example.com", sms_notification)
+user.send_notification("Hi there!")
+```
+
 </details>
