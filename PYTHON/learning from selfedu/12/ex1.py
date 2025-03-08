@@ -14,5 +14,19 @@ class Counter:
 
 """ скобки после вызова класса это посути вызов __call__ """
 c = Counter()
-print(c())
-print(c())
+# print(c())
+# print(c())
+
+
+class TestCallDecorator:
+    def __init__(self, func):
+        self.__func = func
+
+    def __call__(self,ex_1, *args, **kwargs):
+        return f"вызов __call__ c параметром ex_1:({ex_1}) функуией :{self.__func(ex_1)}"
+
+@TestCallDecorator
+def test_call(test):
+    return f"\ttest_call c аргументом test: {test}"
+
+print(test_call("ЖОПА"))
