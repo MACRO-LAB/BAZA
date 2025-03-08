@@ -1,0 +1,1 @@
+"""Дескрипторы (data descriptor и non-data descriptor) | ООП Python"""
