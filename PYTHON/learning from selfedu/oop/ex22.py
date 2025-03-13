@@ -20,9 +20,6 @@ class Line(Geom):
 
 
 class Rect(Geom):
-
-
-class Rect(Geom):
     def __init__(self, x1, y1, x2, y2, fill=None):
         # Geom.__init__(self,x1,y1,x2,y2)
         super().__init__(x1, y1, x2, y2)  # аналог строки выше #Делинирование
