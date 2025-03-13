@@ -31,6 +31,9 @@ git commit -m "Удален временный файл 11.html~"
 ```
 git push
 ```
+*   ИЛИ
+1. Удалить все временные файлы с пк
+2. git status -> git add . -> git commit -m "Удален временный файл 11.html~" -> git push
 </details>
 
 
