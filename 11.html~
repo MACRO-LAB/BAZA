@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div>
+    <a href="GIT/README.md">
+        <img src="https://raw.githubusercontent.com/devicons/devicon/ca28c779441053191ff11710fe24a9e6c23690d6/icons/git/git-original-wordmark.svg"
+             title="Git" alt="Git" width="40" height="40"/>
+    </a>
+</div>
+<div><a href="PHP/README.md">
+    <img src="https://raw.githubusercontent.com/devicons/devicon/ca28c779441053191ff11710fe24a9e6c23690d6/icons/php/php-original.svg"
+         title="PHP" alt="PHP" width="40" height="40"/>
+</a></div>
+
+
+    <a href="jetbrains/README.md">
+        <img src="https://raw.githubusercontent.com/devicons/devicon/ca28c779441053191ff11710fe24a9e6c23690d6/icons/jetbrains/jetbrains-original.svg"
+             title="JetBrains" alt="JetBrains" width="40" height="40"/>
+    </a>
+
+    <a href="JS/README.md">
+        <img src="https://raw.githubusercontent.com/devicons/devicon/ca28c779441053191ff11710fe24a9e6c23690d6/icons/javascript/javascript-original.svg"
+             title="JavaScript" alt="JavaScript" width="40" height="40"/>
+    </a>
+
+    <a href="PYTHON/README.md">
+        <img src="https://raw.githubusercontent.com/devicons/devicon/ca28c779441053191ff11710fe24a9e6c23690d6/icons/python/python-original.svg"
+             title="Python" alt="Python" width="40" height="40"/>
+    </a>
+
+    <a href="BITRIX/README.md">
+        <img src="https://avatars.mds.yandex.net/get-ydo/3927445/2a00000180965a6ead7b716980d0ab81c2bb/diploma"
+             title="Bitrix" alt="Bitrix" width="40" height="40"/>
+    </a>
+
+    <a href="HTML/README.md">
+        <img src="https://raw.githubusercontent.com/devicons/devicon/ca28c779441053191ff11710fe24a9e6c23690d6/icons/html5/html5-original.svg"
+             title="html" alt="html" width="40" height="40"/>
+    </a>
+
+    <a href="CSS/README.md">
+        <img src="https://raw.githubusercontent.com/devicons/devicon/ca28c779441053191ff11710fe24a9e6c23690d6/icons/css3/css3-original.svg"
+             title="css" alt="css" width="40" height="40"/>
+    </a>
+
+</body>
+</html>
