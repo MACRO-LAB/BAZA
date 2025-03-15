@@ -116,6 +116,7 @@ for line in read_large_file('large_file.txt'):
 
 <details>
     <summary>Библиотеки асинхронные</summary>
+Корутина — это то, что возвращает функция с await. Чувствуете разницу между f и f()?
 
 *   aiohttp
 *   aiogram
