@@ -3,6 +3,7 @@
     aiohttp
     aiogram
     aiosqlite
+    SQLAlchemy
     aiofiles
 """
 import asyncio
