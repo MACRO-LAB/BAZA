@@ -3,6 +3,7 @@
     aiohttp
     aiogram
     aiosqlite
+    aiofiles
 """
 import asyncio
 from time import time
