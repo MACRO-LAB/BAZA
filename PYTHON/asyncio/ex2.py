@@ -2,6 +2,7 @@
 Корутины в асинхронном режиме - это функции, которые могут выполняться параллельно
 asyncio.run(main()) - собыьийный циел - нужно передать точьку входного кода
 asyncio.create_task() - подготавливает задачу
+time.sleep() - для asyncio не подойдет , используем asyncio.sleep()
 """
 
 import asyncio
@@ -31,5 +32,5 @@ async def main():
 
     await asyncio.gather(task1, task2, task3)  # аналогично записи выше
 
-
+print(asyncio.gather)
 asyncio.run(main())
