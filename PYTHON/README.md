@@ -112,3 +112,15 @@ for line in read_large_file('large_file.txt'):
 ```
 
 </details>
+
+
+<details>
+    <summary>Библиотеки асинхронные</summary>
+
+*   aiohttp
+*   aiogram
+*   aiosqlite
+*   SQLAlchemy
+*   aiofiles
+*   [io_uring](https://habr.com/ru/articles/589389/) - люнекс
+</details>
