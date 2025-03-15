@@ -5,6 +5,7 @@
     aiosqlite
     SQLAlchemy
     aiofiles
+    io_uring - люнекс https://habr.com/ru/articles/589389/
 """
 import asyncio
 from time import time
