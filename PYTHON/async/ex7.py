@@ -6,6 +6,11 @@ import asyncio
 import time
 from aiohttp import ClientSession
 
+from datetime import datetime
+
+# Получаем текущее время
+now = datetime.now()
+
 
 async def get_weather(city):
     async with ClientSession() as session:
@@ -28,9 +33,10 @@ async def main(cities_):
 
 cities = ['Irkutsk', "Svirsk", 'Krasnodar']
 
-print(time.strftime('%X'))
-
+print(time.time())
+a = (time.time())
 asyncio.run(main(cities))
 
-print(time.strftime('%X'))
+print(time.time())
+print(f"Время на работу {time.time() - a}") #print(time.time()-a)
 
