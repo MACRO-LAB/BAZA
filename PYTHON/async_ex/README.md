@@ -12,6 +12,7 @@
 * SQLAlchemy
 * aiofiles
 * [io_uring](https://habr.com/ru/articles/589389/) - люнекс
+* aiologger
 
 </details>
 
