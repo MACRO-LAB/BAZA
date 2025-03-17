@@ -116,6 +116,6 @@ for line in read_large_file('large_file.txt'):
 <details>
     <summary>ASUNC</summary>
 
-*   [ASUNC](async/README.md)
+*   [ASUNC](async_ex/README.md)
 
 </details>
