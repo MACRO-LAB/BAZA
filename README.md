@@ -12,10 +12,11 @@
   <img src="https://raw.githubusercontent.com/devicons/devicon/ca28c779441053191ff11710fe24a9e6c23690d6/icons/markdown/markdown-original.svg" alt="Markdown" width="45" height="45"/>
   <img src="https://raw.githubusercontent.com/devicons/devicon/ca28c779441053191ff11710fe24a9e6c23690d6/icons/php/php-original.svg" alt="PHP" width="45" height="45"/>
   <img src="https://raw.githubusercontent.com/devicons/devicon/ca28c779441053191ff11710fe24a9e6c23690d6/icons/python/python-original.svg" alt="Python" width="45" height="45"/>
+  <img src="https://raw.githubusercontent.com/devicons/devicon/ca28c779441053191ff11710fe24a9e6c23690d6/icons/docker/docker-original.svg" alt="Docker" width="45" height="45"/>
 </div>
 
 ## Содержание 📖
-[BITRIX](BITRIX/README.md) • [CSS](CSS/README.md) • [GIT](GIT/README.md) • [HTML](HTML/README.md) • [JETBRAINS](JETBRAINS/README.md) • [JS](JS/README.md) • [MARKDOWN](MARKDOWN/README.md) • [PHP](PHP/README.md) • [PYTHON](PYTHON/README.md)• [CONSOLE](CONSOLE/README.md)
+[BITRIX](BITRIX/README.md) • [CSS](CSS/README.md) • [GIT](GIT/README.md) • [HTML](HTML/README.md) • [JETBRAINS](JETBRAINS/README.md) • [JS](JS/README.md) • [MARKDOWN](MARKDOWN/README.md) • [PHP](PHP/README.md) • [PYTHON](PYTHON/README.md)• [CONSOLE](CONSOLE/README.md)• [DOCKER](DOCKER/README.md)
 
 ## Статистика проекта 📊
 [![Статистика GitHub](https://github-readme-stats.vercel.app/api?username=MACRO-LAB&show_icons=true&theme=radical)](https://github.com/ваше_имя_пользователя)
