@@ -36,12 +36,37 @@
 * `docker rm <имя конейнера>` - удалить контейнер
 * `docker container prune` - удалить все неиспользуемые контейнеры
 
-### Примеры 
-* `docker run --name test -it python:3.12-alpine`
+</details>
 
-### Satus
+<details> 
+    <summary>Satus</summary>
+
 * `Exited (0)`: контейнер завершил работу нормально
 * `Exited (137)`: контейнер завершил работу с ошибкой
+</details>
+
+
+<details> 
+    <summary>Примеры</summary>
+
+* `docker run --name test -it python:3.12-alpine`
+
+* `docker build  . -t myapp:0.1` -создание образа с именем myapp и тегом 0.1
+```dockerfile
+FROM python:3.12-alpine
+ENV PYTHONUNBUFFERED=1
+WORKDIR /python-app
+COPY . .
+CMD ["python", "main.py"]
+```
+`ENV PYTHONUNBUFFERED=1` для отключениея буфера
+</details>
+
+<details> 
+    <summary>Создание</summary>
+
+* `docker build <путь к DockerFile> -t <имя образа> .`
+
 </details>
 
 
