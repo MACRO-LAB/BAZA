@@ -14,7 +14,7 @@ class Counter:
 
 """ скобки после вызова класса это посути вызов __call__ """
 c = Counter()
-# print(c())
+# print(c()) 
 # print(c())
 
 
