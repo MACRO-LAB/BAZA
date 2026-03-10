@@ -19,7 +19,7 @@
 [BITRIX](BITRIX/README.md) • [CSS](CSS/README.md) • [GIT](GIT/README.md) • [HTML](HTML/README.md) • [JETBRAINS](JETBRAINS/README.md) • [JS](JS/README.md) • [MARKDOWN](MARKDOWN/README.md) • [PHP](PHP/README.md) • [PYTHON](PYTHON/README.md)• [CONSOLE](CONSOLE/README.md)• [DOCKER](DOCKER/README.md)
 
 ## Статистика проекта 📊
-[![Статистика GitHub](https://github-readme-stats.vercel.app/api?username=MACRO-LAB&show_icons=true&theme=radical)](https://github.com/ваше_имя_пользователя)
+[![Статистика GitHub](https://github-readme-stats.vercel.app/api?username=MACRO-LAB&show_icons=true&theme=radical)](https://github.com/MACRO-LAB)
 
 ## Информация о проекте ℹ️
 База знаний представляет собой коллекцию документации по различным технологиям веб-разработки и инструментам разработки программного обеспечения.

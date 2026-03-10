@@ -5,7 +5,7 @@
 <details>
     <summary>OOP</summary>
 
-*   [OOP](oop/README_2.md)
+*   [OOP](oop/README_self.md)
 
 </details>
 
@@ -116,7 +116,7 @@ for line in read_large_file('large_file.txt'):
 <details>
     <summary>ASUNC</summary>
 
-*   [ASUNC](async_ex/README.md)
+*   [ASUNC](async/README_self.md)
 
 </details>
 
